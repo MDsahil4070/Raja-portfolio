@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahil Alam | Web Developer & UI Designer</title>
+  
+  <!-- Browser Tab Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/profile.jpg">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- Navigation Bar -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">Raja<span>.</span></a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link nav__btn">Contact</a></li>
+        </ul>
+        <div class="nav__close" id="nav-close"><i class="fa-solid fa-xmark"></i></div>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!-- 1. Home / Hero Section -->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__data">
+          <span class="home__greeting">
+            <i class="fa-solid fa-circle-check"></i> Available for freelance projects
+          </span>
+          <h1 class="home__title">Hello, I'm <br><span class="highlight">raja_590k</span></h1>
+          <h2 class="home__subtitle">I am a <span id="typing-text" class="highlight"></span><span class="typed-cursor">|</span></h2>
+          <p class="home__description">
+            Main modern, high-performance web applications aur hyper-local digital products build karta hoon. Clean code aur intuitive mobile-first UI meri pehchan hai.
+          </p>
+          <div class="home__buttons">
+            <a href="#projects" class="btn btn--primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contact" class="btn btn--outline">Let's Talk</a>
+          </div>
+          <div class="home__social">
+            <a href="https://github.com/MDsahil4070" target="_blank" class="home__social-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://instagram.com/raja_590k" target="_blank" class="home__social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com/@Basskinghajipur" target="_blank" class="home__social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="mailto:mdsahil3330z@gmail.com" class="home__social-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="home__img-wrapper">
+          <div class="home__blob">
+            <img src="images/profile.jpg" alt="Sahil Alam" class="home__img">
+          </div>
+          <div class="home__badge">
+            <span class="badge__icon"><i class="fa-solid fa-code"></i></span>
+            <div>
+              <h4>Clean Architecture</h4>
+              <p>Mobile-first UI/UX</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">Get To Know Me</span>
+          <h2 class="section__title">About Me</h2>
+        </div>
+
+        <div class="about__container grid">
+          <div class="about__data reveal">
+            <h3 class="about__heading">Passionate Developer Crafting Purpose-Driven Digital Experiences</h3>
+            <p class="about__description">
+              Mera focus fast, reliable aur responsive web solutions banane par rehta hai. Chahe daily business tracking application ho ya hyper-local grocery delivery storefront, main real-world challenges ko clean code aur accessible UI se solve karta hoon.
+            </p>
+
+            <div class="about__info grid">
+              <div class="about__box">
+                <i class="fa-solid fa-laptop-code about__icon"></i>
+                <h4 class="about__box-title">Self-Taught</h4>
+                <p class="about__box-subtitle">Continuous Learner</p>
+              </div>
+
+              <div class="about__box">
+                <i class="fa-solid fa-layer-group about__icon"></i>
+                <h4 class="about__box-title">Full Process</h4>
+                <p class="about__box-subtitle">Design to Deployment</p>
+              </div>
+
+              <div class="about__box">
+                <i class="fa-solid fa-mobile-screen-button about__icon"></i>
+                <h4 class="about__box-title">Mobile-First</h4>
+                <p class="about__box-subtitle">Responsive on Every Screen</p>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn--primary">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Skills Section -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">My Tech Stack</span>
+          <h2 class="section__title">Technical Skills</h2>
+        </div>
+
+        <div class="skills__container grid">
+          <div class="skills__card reveal">
+            <div class="skills__icon-box"><i class="fa-brands fa-html5"></i></div>
+            <h3 class="skills__name">HTML5</h3>
+            <p class="skills__level">Semantic Structure & Clean Layouts</p>
+          </div>
+
+          <div class="skills__card reveal">
+            <div class="skills__icon-box"><i class="fa-brands fa-css3-alt"></i></div>
+            <h3 class="skills__name">CSS3 & Styling</h3>
+            <p class="skills__level">Flexbox, Grid, Animations & Glassmorphism</p>
+          </div>
+
+          <div class="skills__card reveal">
+            <div class="skills__icon-box"><i class="fa-brands fa-js"></i></div>
+            <h3 class="skills__name">JavaScript</h3>
+            <p class="skills__level">DOM Architecture, Async/APIs & Interactive Logic</p>
+          </div>
+
+          <div class="skills__card reveal">
+            <div class="skills__icon-box"><i class="fa-solid fa-code-branch"></i></div>
+            <h3 class="skills__name">Git & GitHub</h3>
+            <p class="skills__level">Version Control & Open Source Collaboration</p>
+          </div>
+
+          <div class="skills__card reveal">
+            <div class="skills__icon-box"><i class="fa-solid fa-terminal"></i></div>
+            <h3 class="skills__name">Acode / VS Code</h3>
+            <p class="skills__level">Fast Mobile & Desktop Development</p>
+          </div>
+
+          <div class="skills__card reveal">
+            <div class="skills__icon-box"><i class="fa-solid fa-server"></i></div>
+            <h3 class="skills__name">PHP & MySQL</h3>
+            <p class="skills__level">Backend Logic, Ledgers & Database APIs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Services Section -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">Specialization</span>
+          <h2 class="section__title">What I Can Do</h2>
+        </div>
+
+        <div class="services__container grid">
+          <div class="services__card reveal">
+            <div class="services__icon"><i class="fa-solid fa-desktop"></i></div>
+            <h3 class="services__title">Responsive Web Design</h3>
+            <p class="services__description">
+              Har phone, tablet aur desktop screen ke liye ultra-fast, smooth aur attractive web interfaces create karta hoon.
+            </p>
+          </div>
+
+          <div class="services__card reveal">
+            <div class="services__icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            <h3 class="services__title">E-Commerce Storefronts</h3>
+            <p class="services__description">
+              Hyper-local commerce, instant delivery stores aur online catalogs ke liye interactive cart aur clean order systems.
+            </p>
+          </div>
+
+          <div class="services__card reveal">
+            <div class="services__icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3 class="services__title">Interactive Web Utilities</h3>
+            <p class="services__description">
+              Daily labor attendance tracking, shopkeeper khata ledgers aur customized web calculations tools develop karta hoon.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Featured Projects Section (Focused on Baazaaro) -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">Portfolio Showcase</span>
+          <h2 class="section__title">Featured Project</h2>
+        </div>
+
+        <div class="projects__container grid" style="max-width: 680px; margin: 0 auto;">
+
+          <!-- Project 1: Baazaaro Platform -->
+          <article class="project__card reveal">
+            <div class="project__img-box">
+              <img src="images/bazaaro.png" alt="Baazaaro Hyper-Local Grocery Platform" class="project__img">
+              <span class="project__tag">Quick Commerce & Grocery</span>
+            </div>
+            <div class="project__content">
+              <h3 class="project__title">Baazaaro Store</h3>
+              <p class="project__desc">
+                Hyper-local quick-commerce grocery delivery platform designed for Bidupur, featuring live shopping cart, dynamic category filtering, customer authentication, and real-time order tracking.
+              </p>
+              <div class="project__links">
+                <a href="https://www.baazaaro.store/" target="_blank" class="btn-link">View Live Store <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com/MDsahil4070" target="_blank" class="btn-link btn-link--github"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Experience / Journey Section -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">Path & Growth</span>
+          <h2 class="section__title">My Journey</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__year">2026 - Present</span>
+              <h3 class="timeline__title">Hyper-Local Web Developer</h3>
+              <p class="timeline__text">
+                Developing full web frontends, utility platforms (Bazaaro, RozHisab) aur performant single-page apps using pure HTML, CSS, JavaScript aur VS Code/Acode environment.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__year">2025 - 2026</span>
+              <h3 class="timeline__title">Front-End & UI Architecture Foundation</h3>
+              <p class="timeline__text">
+                Mastered responsive layouts, complex CSS flex/grid architecture, smooth animations aur modern JavaScript asynchronous concepts.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__year">2024</span>
+              <h3 class="timeline__title">Digital Content & Media Creation</h3>
+              <p class="timeline__text">
+                Audience retention analytics, storytelling, video editing pipelines aur social media growth strategies par hands-on command hasil ki.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">Get In Touch</span>
+          <h2 class="section__title">Let's Work Together</h2>
+        </div>
+
+        <div class="contact__container grid reveal">
+          <div class="contact__info">
+            <h3 class="contact__title">Talk to me</h3>
+
+            <div class="contact__card">
+              <i class="fa-solid fa-envelope contact__icon"></i>
+              <div>
+                <h4 class="contact__card-title">Email</h4>
+                <p class="contact__card-data">mdsahil3330z@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact__card">
+              <i class="fa-solid fa-location-dot contact__icon"></i>
+              <div>
+                <h4 class="contact__card-title">Location</h4>
+                <p class="contact__card-data">Vaishali, Bihar, India</p>
+              </div>
+            </div>
+
+            <div class="contact__card">
+              <i class="fa-brands fa-instagram contact__icon"></i>
+              <div>
+                <h4 class="contact__card-title">Instagram</h4>
+                <p class="contact__card-data">@raja_590k</p>
+              </div>
+            </div>
+          </div>
+
+          <form action="https://formspree.io/f/xyeeqkbg" method="POST" class="contact__form" id="contact-form">
+            <div class="form__group">
+              <label for="name" class="form__label">Full Name</label>
+              <input type="text" name="name" id="name" placeholder="Aapka naam" class="form__input" required>
+            </div>
+
+            <div class="form__group">
+              <label for="email" class="form__label">Email Address</label>
+              <input type="email" name="_replyto" id="email" placeholder="Aapka email" class="form__input" required>
+            </div>
+
+            <div class="form__group">
+              <label for="message" class="form__label">Message</label>
+              <textarea name="message" id="message" rows="5" placeholder="Aapka project ya message..." class="form__input form__textarea" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+            <p class="form__status" id="form-status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 8. Enhanced Modern Dark Footer -->
+  <footer class="footer">
+    <div class="footer__container container grid">
+      
+      <!-- Brand Column -->
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo">Sahil Alam<span>.</span></a>
+        <p class="footer__tagline">
+          Crafting clean, accessible web apps and hyper-local digital products. Focused on clean code and smooth user experience.
+        </p>
+        <div class="footer__status">
+          <span class="status-indicator"></span>
+          <span>Open to freelance projects & collaborations</span>
+        </div>
+      </div>
+
+      <!-- Quick Navigation -->
+      <div class="footer__links">
+        <h4 class="footer__title">Quick Links</h4>
+        <ul class="footer__list">
+          <li><a href="#home" class="footer__link">Home</a></li>
+          <li><a href="#about" class="footer__link">About Me</a></li>
+          <li><a href="#skills" class="footer__link">Skills</a></li>
+          <li><a href="#projects" class="footer__link">Featured Projects</a></li>
+          <li><a href="#contact" class="footer__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social & Connect -->
+      <div class="footer__social-col">
+        <h4 class="footer__title">Connect Online</h4>
+        <div class="footer__socials">
+          <a href="https://github.com/MDsahil4070" target="_blank" class="footer__social" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://instagram.com/raja_590k" target="_blank" class="footer__social" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://youtube.com/@Basskinghajipur" target="_blank" class="footer__social" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="mailto:mdsahil3330z@gmail.com" class="footer__social" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <a href="#contact" class="footer__hire-btn">Hire Me <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copy">
+          Designed & Built by <span class="highlight-text">Sahil Alam</span> &copy; 2026. All rights reserved.
+        </p>
+        <button id="footer-scroll-top" class="footer__top-btn">
+          Back to Top <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Chat Button -->
+  <a href="https://wa.me/917061244408?text=Hi%20Sahil,%20I%20saw%20your%20portfolio!" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
